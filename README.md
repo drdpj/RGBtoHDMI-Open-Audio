@@ -47,8 +47,9 @@ The audio system is based around a Texas Instruments PCM1808 ADC IC (https://www
 
 
 ### Front (prototype)
-<img width="1739" height="793" alt="Screenshot 2026-03-27 175502" src="https://github.com/user-attachments/assets/04423713-9d66-43f3-bbb3-543eeae2d605" />
+<img width="1758" height="811" alt="Screenshot 2026-03-27 180506" src="https://github.com/user-attachments/assets/3c845c70-13d5-449b-8379-7cbb996f9cb5" />
 
 ### Back
 <img width="1704" height="888" alt="Screenshot 2026-03-27 175520" src="https://github.com/user-attachments/assets/7b45f41c-1b5b-4cbf-9e70-16f459a1500a" />
+
 
