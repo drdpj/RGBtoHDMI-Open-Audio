@@ -1,5 +1,6 @@
 # RGBtoHDMI Open Audio
 ## This is Open Hardware!
+### NB - schematics and pcb layout to follow very shortly once independently tested. Trying to build one based on the info here is entirely at your own risk.
 
 This is an open hardware audio interface for the popular RGBtoHDMI device.
 RGBtoHDMI allows the use of many old computer systems with a modern HDMI display. The currently developed fork can be found here:
@@ -44,6 +45,22 @@ This is a **plain-English summary only** and is **not a substitute for the full 
 
 ## Details
 The audio system is based around a Texas Instruments PCM1808 ADC IC (https://www.ti.com/lit/ds/symlink/pcm1808.pdf) with a 12.288MHz oscillator. It requires 5V and 3.3V supplies, both of which are taken from the Rasperry Pi GPIO. Three data pins are required - BCK (the bitclock), LRCK (left/right clock) and DOUT (the audio data). As the RGBtoHDMI software can cope with the LRCK and DOUT being multiplexed to one pin, the software is set up in such a way that it uses the edges of the BCK signal to clock the data rate, rather than the high/low, to clock the data. Consequently the BCK rate must be halved before it reaches the Pi GPIO. This is achieved using a 74LVC1G80 flipflop. Other components provide relevant pullups, power cleaning, and audio filters as specified in the PCM1808 data sheet.  One jumper connection is available (JP1) - making this connection will have the sample rate of the PCM1808 (24KHz instead of 48KHz).
+
+This is hand-solderable (you will need magnification of some description). The parts are reasonably spaced out - just take your time.
+
+### BOM
+| Reference     | Qty | Value      | Mouser Part (e.g.)           |
+|---------------|-----|------------|-------------------------------|
+| C1, C4        | 2   | 1uF        | 963-EMK107BJ105MAHT           |
+| C2, C3        | 2   | 10nF       | 80-C0603C103M5R3121           |
+| C5, C7, C10   | 3   | 10uF       | 187-CL10A106MA8NRNC           |
+| C6, C8, C9    | 4   | 0.1uF      | 791-0603B104K160CT            |
+| R1, R5        | 2   | 4K7        | 594-MCT0603MD4701DP5          |
+| R2, R3        | 2   | 470R       | 71-CRCW0603J-470-E3           |
+| R4, R6, R7    | 3   | 560R       | 652-CR0603-JW-561ELF          |
+| U1            | 1   | PCM1808PWR | 595-PCM1808PWR                |
+| U2            | 1   | 74LVC1G80  | 595-74LVC1G80DBVRG4           |
+| Y1            | 1   | 12.288MHz  | 346-3225Z12.2880C15X          |
 
 
 ### Front (prototype)
