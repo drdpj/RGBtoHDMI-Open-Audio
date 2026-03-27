@@ -43,5 +43,12 @@ In simple terms: **you can use it, copy it, modify it, make it, and sell product
 This is a **plain-English summary only** and is **not a substitute for the full licence text**. https://cern-ohl.web.cern.ch/
 
 ## Details
+The audio system is based around a Texas Instruments PCM1808 ADC IC (https://www.ti.com/lit/ds/symlink/pcm1808.pdf) with a 12.288MHz oscillator. It requires 5V and 3.3V supplies, both of which are taken from the Rasperry Pi GPIO. Three data pins are required - BCK (the bitclock), LRCK (left/right clock) and DOUT (the audio data). As the RGBtoHDMI software can cope with the LRCK and DOUT being multiplexed to one pin, the software is set up in such a way that it uses the edges of the BCK signal to clock the data rate, rather than the high/low, to clock the data. Consequently the BCK rate must be halved before it reaches the Pi GPIO. This is achieved using a 74LVC1G80 flipflop. Other components provide relevant pullups, power cleaning, and audio filters as specified in the PCM1808 data sheet.  One jumper connection is available (JP1) - making this connection will have the sample rate of the PCM1808 (24KHz instead of 48KHz).
 
+
+### Front (prototype)
+<img width="1739" height="793" alt="Screenshot 2026-03-27 175502" src="https://github.com/user-attachments/assets/04423713-9d66-43f3-bbb3-543eeae2d605" />
+
+### Back
+<img width="1704" height="888" alt="Screenshot 2026-03-27 175520" src="https://github.com/user-attachments/assets/7b45f41c-1b5b-4cbf-9e70-16f459a1500a" />
 
