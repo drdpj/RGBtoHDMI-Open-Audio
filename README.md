@@ -12,7 +12,7 @@ RGBtoHDMI allows the use of many old computer systems with a modern HDMI display
 https://github.com/IanSB/RGBtoHDMI
 
 A recent addition to the system's functionality has been to allow the injection of analogue audio to the HDMI connection. The software to do this is all covered by the GPL, but the hardware necessary is only available through select vendors.
-This is an open version of the hardware which can be produced independently. It does not have all of the functionality of the original hardware, but this means it is marginally simpler and cheaper to produce.
+This is an open version of the hardware which can be produced independently. It does not have all of the functionality of the original hardware, but this means it is marginally simpler and cheaper to produce. As it's open, if you do want to adapt the design to incorporate the missing feature (single pin multiplexing), you're absolutely free to!
 
 Details of how the hardware can be attached to the RGBtoHDMI, and its usage, can be found in the official RGBtoHDMI wiki here: https://github.com/IanSB/RGBtoHDMI/wiki/Audio
 
@@ -42,7 +42,7 @@ If you share the design, share a modified version, or distribute a product made 
 
 ### What this means in practice
 
-In simple terms: **you can use it, copy it, modify it, make it, and sell products based on it — but if you pass it on, you must keep the design files open under the same licence.** 
+In simple terms: **you can use it, copy it, modify it, make it, and sell products based on it — but if you pass them on, you must keep the design files open under the same licence.** 
 
 ### Important note
 
