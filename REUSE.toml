@@ -1,0 +1,49 @@
+version = 1
+
+# KiCad design source files
+[[annotations]]
+path = [
+    "rgbtohdmi-audio.kicad_pcb",
+    "rgbtohdmi-audio.kicad_sch",
+    "rgbtohdmi-audio.kicad_pro",
+]
+SPDX-FileCopyrightText = "2026 Daniel Jameson"
+SPDX-License-Identifier = "CERN-OHL-S-2.0+"
+
+# README.md
+[[annotations]]
+path = ["README.md"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileCopyrightText = "2026 Daniel Jameson"
+
+# KiCad generated/local state files
+[[annotations]]
+path = [
+    "rgbtohdmi-audio.kicad_prl",
+    "fp-info-cache",
+    "fp-lib-table",
+]
+generated = true
+SPDX-FileCopyrightText = "2026 Daniel Jameson"
+SPDX-License-Identifier = "CC0-1.0"
+
+# Fabrication outputs
+[[annotations]]
+path = [
+    "jlcpcb/**",
+]
+generated = true
+SPDX-FileCopyrightText = "2026 Daniel Jameson"
+SPDX-License-Identifier = "CERN-OHL-S-2.0+"
+
+# Sundries
+[[annotations]]
+path = [
+    ".gitignore",
+    ".github/**",
+    "add-license-headers.sh",
+]
+generated = true
+SPDX-FileCopyrightText = "2026 Daniel Jameson"
+SPDX-License-Identifier = "CC0-1.0"
+

@@ -1,6 +1,11 @@
+
+<!--
+SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-FileCopyrightText: 2026 Daniel Jameson
+-->
+
 # RGBtoHDMI Open Audio
 ## This is Open Hardware!
-### NB - schematics and pcb layout to follow very shortly once independently tested. Trying to build one based on the info here is entirely at your own risk.
 
 This is an open hardware audio interface for the popular RGBtoHDMI device.
 RGBtoHDMI allows the use of many old computer systems with a modern HDMI display. The currently developed fork can be found here:

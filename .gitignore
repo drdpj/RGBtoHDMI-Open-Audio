@@ -1,0 +1,6 @@
+*.lck
+rgbtohdmi-audio.kicad_sch_old
+/rgbtohdmi-audio-backups
+/jlcpcb/production_files
+/.reuse
+jlcpcb/project.db
