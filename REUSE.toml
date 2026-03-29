@@ -42,6 +42,7 @@ path = [
     ".gitignore",
     ".github/**",
     "add-license-headers.sh",
+    "REUSE.toml",
 ]
 generated = true
 SPDX-FileCopyrightText = "2026 Daniel Jameson"
