@@ -20,6 +20,8 @@ The half-rate jumper is present (make link JP1). The facility to use a single GP
 
 To support audio, you must use the latest beta release of the RGBtoHDMI software from here: https://github.com/IanSB/RGBtoHDMI/releases
 
+I've used REUSE - https://reuse.software/ - to help make the licensing of this project clear. Below's a summary of the main license used.
+
 ## Plain-English Summary of the CERN Open Hardware Licence – Strongly Reciprocal (CERN-OHL-S v2)
 
 Under the **CERN Open Hardware Licence – Strongly Reciprocal (CERN-OHL-S v2)**, **you are allowed to**: 
